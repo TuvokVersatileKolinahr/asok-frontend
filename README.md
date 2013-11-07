@@ -1,7 +1,7 @@
 asok-frontend
 =============
 
-Asok is the ractive frontend for the [asok backend](https://github.com/TuvokVersatileKolinahr/asok-backend).
+Asok is the [ractive](http://www.ractivejs.org/) frontend for the [asok backend](https://github.com/TuvokVersatileKolinahr/asok-backend).
 
 The simple index does the following things:
 

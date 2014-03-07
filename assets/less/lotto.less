@@ -1,0 +1,78 @@
+@boxBackgroundColor: #dadada;
+@boxLinkColor: #757171;
+@boxHeight: 20px;
+@boxWidth: @boxHeight * 2;
+
+/*Rounded Corners*/
+.roundedCorners (@radius: 5px) {
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+    border-radius: @radius;
+    padding: 10px;
+}
+ 
+/*Box Shadow*/
+.boxShadow (@hor: 3px, @vert: 2px, @blur: 5px, @shadow: #757171) {
+    -webkit-box-shadow: @hor @vert @blur @shadow;
+    -moz-box-shadow: @hor @vert @blur @shadow;
+    box-shadow: @hor @vert @blur @shadow;
+}
+ 
+/*Transition*/
+.transition (@range: all, @time: 1s, @ease: ease-in-out) {
+    -moz-transition: @range @time @ease;
+    -webkit-transition: @range @time @ease;
+    -o-transition: @range @time @ease;
+    transition: @range @time @ease;
+}
+
+#box {
+     
+    a {
+        background-color: @boxBackgroundColor;
+        color: #fff;
+        display: block;
+         
+        height: @boxHeight;
+        width: @boxWidth;
+        line-height: @boxHeight;
+         
+        margin: auto;
+        margin-top: 50px;
+         
+        // text-align: center;
+        text-decoration: none;
+     
+        .roundedCorners(6px);
+        .boxShadow;
+    }
+     
+    a:hover {
+        background: @boxLinkColor;
+        .transition;
+    }
+         
+    p {
+        font-size: 50px;
+        font-family: helvetica, arial, sans-serif;
+    }
+}
+
+// #box {
+//     background-color: @boxBackgroundColor;
+//     .roundedCorners;
+//     .boxShadow;
+// }
+
+// #box a {
+//     display: block;
+//     height: @boxHeight;
+//     width: @boxWidth;
+//     background: @boxBackgroundColor;
+//     .roundedCorners(20px);
+// }
+     
+// #box a:hover {
+//     background: @boxLinkColor;
+//     .transition;
+// }

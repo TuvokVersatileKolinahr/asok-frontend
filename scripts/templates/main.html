@@ -1,3 +1,8 @@
-<p>{{greeting}}, {{recipient}}!</p>
-<button on-tap='getgreet'>Say!</button>
-
+<div class="alert"><h6>The greeting:</h6>
+	<div class="alert alert-success">
+	{{greeting}}, {{recipient}}!<br>
+	<i class="icon-globe"></i>Language:<i>{{language}}</i>
+	</div>
+	
+	<button on-tap='getgreet' class="button"><i class="icon-refresh"></i>New greeting!</button>
+</div>
